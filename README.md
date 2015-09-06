@@ -1,6 +1,6 @@
-# cssnano-cli [![Build Status](https://travis-ci.org/ben-eb/cssnano-cli.svg?branch=master)][ci] [![NPM version](https://badge.fury.io/js/cssnano-cli.svg)][npm] [![Dependency Status](https://gemnasium.com/ben-eb/cssnano-cli.svg)][deps]
+# [cssnano]-cli [![Build Status](https://travis-ci.org/ben-eb/cssnano-cli.svg?branch=master)][ci] [![NPM version](https://badge.fury.io/js/cssnano-cli.svg)][npm] [![Dependency Status](https://gemnasium.com/ben-eb/cssnano-cli.svg)][deps]
 
-> A CLI for modular minifier cssnano. [cssnano](https://github.com/ben-eb/cssnano).
+> A CLI for modular minifier [cssnano].
 
 ## Install
 
@@ -65,3 +65,4 @@ MIT © [Ben Briggs](http://beneb.info)
 [ci]:      https://travis-ci.org/ben-eb/cssnano-cli
 [deps]:    https://gemnasium.com/ben-eb/cssnano-cli
 [npm]:     http://badge.fury.io/js/cssnano-cli
+[cssnano]: https://github.com/ben-eb/cssnano
