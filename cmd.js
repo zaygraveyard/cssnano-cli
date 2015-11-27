@@ -16,7 +16,10 @@ var opts = require('minimist')(process.argv.slice(2), {
 });
 
 if (opts.version) {
-    return console.log(require('../package.json').version);
+    return console.log(
+        'cssnano v' + require('cssnano/package.json').version,
+        '(cli v' + require('./package.json').version + ')'
+    );
 }
 
 var file = opts._[0];
