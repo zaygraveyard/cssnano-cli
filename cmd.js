@@ -12,7 +12,8 @@ var opts = require('minimist')(process.argv.slice(2), {
         h: 'help',
         s: 'sourcemap',
         v: 'version'
-    }
+    },
+    boolean: 's'
 });
 
 if (opts.version) {

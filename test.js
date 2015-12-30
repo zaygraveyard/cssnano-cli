@@ -53,3 +53,12 @@ test('cli: usage with sourcemaps', function (t) {
         t.ok(hasMap, 'should generate a sourcemap');
     });
 });
+
+test('cli: usage with sourcemaps (2)', function (t) {
+    t.plan(1);
+
+    setup(['--sourcemap', fixture], function (err, out) {
+        var hasMap = /sourceMappingURL=data:application\/json;base64/.test(out);
+        t.ok(hasMap, 'should generate a sourcemap');
+    });
+});
