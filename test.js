@@ -62,3 +62,12 @@ test('cli: usage with sourcemaps (2)', function (t) {
         t.ok(hasMap, 'should generate a sourcemap');
     });
 });
+
+test('cli: usage with sourcemaps and source file contains sourcemaps', function (t) {
+    t.plan(1);
+
+    setup(['fixtures/less.fixture.css', '--sourcemap'], function (err, out) {
+        var hasMap = /\{"version":3,/.test(out);
+        t.ok(hasMap, 'should generate a sourcemap');
+    });
+});
